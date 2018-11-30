@@ -1,11 +1,10 @@
 <template>
   <div class="app">
-    <hello-world
-      class="app__hello"
-      title="Veteran 2 Veteran LLC"
-      :vmaLinks="vmaLinks"
-      :mdcLinks="mdcLinks"
-    ></hello-world>
+    <mdc-top-app-bar title="Title2" event="nav">
+      <mdc-top-app-bar-action icon="help"></mdc-top-app-bar-action>
+    </mdc-top-app-bar>
+    <mdc-drawer toggle-on="nav" temporary/>
+    <!-- <hello-world class="app__hello" title="Veteran 2 Veteran"></hello-world> -->
   </div>
 </template>
 
@@ -14,44 +13,7 @@ import HelloWorld from "./components/HelloWorld.vue";
 
 export default {
   data() {
-    return {
-      vmaLinks: [
-        {
-          title: "Documentation",
-          url: "https://stasson.github.io/vue-mdc-adapter"
-        },
-        {
-          title: "GitHub",
-          url: "https://github.com/stasson/vue-mdc-adapter"
-        },
-        {
-          title: "Twitter",
-          url: "https://twitter.com/vuemdc"
-        },
-        {
-          title: "Chat",
-          url: "https://gitter.im/vue-mdc-adapter/Lobby"
-        }
-      ],
-      mdcLinks: [
-        {
-          title: "Documentation",
-          url: "https://material.io/components/web/"
-        },
-        {
-          title: "GitHub",
-          url: "https://github.com/material-components/material-components-web"
-        },
-        {
-          title: "Guidelines",
-          url: "https://material.io/guidelines"
-        },
-        {
-          title: "Awesome Material Components",
-          url: "https://github.com/webdenim/awesome-material-components"
-        }
-      ]
-    };
+    return {};
   },
   components: { HelloWorld }
 };
@@ -63,7 +25,11 @@ $mdc-typography-font-family: "Roboto Mono", monospace;
 
 // Then, import required files
 @import "@material/typography/mixins";
-
+@import "vue-mdc-adapter/dist/styles";
+@import "@material/layout-grid/mdc-layout-grid";
+@import "@material/rtl/mixins";
+@import "@material/theme/color-palette";
+@import "@material/theme/mixins";
 html {
   width: 100%;
   height: 100%;
@@ -71,7 +37,7 @@ html {
 
 body {
   @include mdc-typography(body2);
-
+  background-color: #141313;
   width: 100%;
   min-height: 100%;
   margin: 0;

@@ -1,9 +1,9 @@
 import Vue from "vue";
 import App from "./App.vue";
 import "./registerServiceWorker";
-import VueMDCAdapter from 'vue-mdc-adapter'
+import VueMDCAdapter from "vue-mdc-adapter";
 
-Vue.use(VueMDCAdapter)
+Vue.use(VueMDCAdapter);
 
 Vue.config.productionTip = false;
 
