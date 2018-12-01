@@ -8,5 +8,5 @@ steps:
   args: ['install']
 - name: 'gcr.io/cloud-builders/npm'
   args: ['run', 'build']
-- name: "gcr.io/cloud-builders/gsutil"
+- name: 'gcr.io/cloud-builders/gsutil'
   args: ["-rsync", "-r", "/" "gs://www.evabenefits.com"]
