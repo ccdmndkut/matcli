@@ -3,13 +3,13 @@
     <mdc-layout-grid>
    <mdc-layout-cell
         desktop='2'
-        phone='2'
-        tablet='2'
+        phone='0'
+        tablet='0'
       ></mdc-layout-cell>
          <mdc-layout-cell
         desktop='8'
         phone='8'
-        tablet='8'
+        tablet='4'
       >
       <hello-world></hello-world>
       </mdc-layout-cell>
