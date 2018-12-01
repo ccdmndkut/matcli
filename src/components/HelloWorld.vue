@@ -3,7 +3,7 @@
     <template v-for="n in num">
       <mdc-card class="topspacer" :key="n">
         <mdc-card-header large-title subtitle="Subtitle goes  here " title="Title goes here"></mdc-card-header>
-        <mdc-card-text>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</mdc-card-text>
+        <mdc-card-text>Gist vscode settings</mdc-card-text>
         <mdc-card-actions>
           <mdc-card-action-button @click="mdcbutton">Action {{n}}</mdc-card-action-button>
           <mdc-card-action-button @click="mdcbutton">Action 2</mdc-card-action-button>
