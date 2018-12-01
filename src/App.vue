@@ -15,42 +15,33 @@
       </mdc-layout-cell>
     </mdc-layout-grid>
   </div>-->
-
   <mdc-layout-app>
-    <mdc-toolbar slot='toolbar' >
+    <mdc-toolbar slot="toolbar">
       <mdc-toolbar-row>
         <mdc-toolbar-section align-start>
-          <mdc-toolbar-menu-icon event='toggle-drawer'></mdc-toolbar-menu-icon>
+          <mdc-toolbar-menu-icon event="toggle-drawer"></mdc-toolbar-menu-icon>
           <mdc-toolbar-title>Title</mdc-toolbar-title>
         </mdc-toolbar-section>
         <mdc-toolbar-section align-end>
-          <mdc-toolbar-icon
-            event='show-help'
-            icon='help'
-          ></mdc-toolbar-icon>
+          <mdc-toolbar-icon event="show-help" icon="help"></mdc-toolbar-icon>
         </mdc-toolbar-section>
       </mdc-toolbar-row>
     </mdc-toolbar>
 
-    <mdc-drawer
-      persistent
-      slot='drawer'
-      toggle-on='toggle-drawer'
-    >
+    <mdc-drawer persistent slot="drawer" toggle-on="toggle-drawer">
       <mdc-drawer-list>
-        <mdc-drawer-item start-icon='inbox'>Inbox</mdc-drawer-item>
-        <mdc-drawer-item start-icon='send'>Sent Mail</mdc-drawer-item>
-        <mdc-drawer-item start-icon='drafts'>Drafts</mdc-drawer-item>
+        <mdc-drawer-item start-icon="inbox">Inbox</mdc-drawer-item>
+        <mdc-drawer-item start-icon="send">Sent Mail</mdc-drawer-item>
+        <mdc-drawer-item start-icon="drafts">Drafts</mdc-drawer-item>
       </mdc-drawer-list>
     </mdc-drawer>
 
-    <main class='mw'>
-     
-  
-       
-          <hello-world class='card-demo'></hello-world>
+    <main class="mw">
+      <mdc-layout-grid>
+        <mdc-layout-cell align-center desktop="2" phone="2" tablet="2"></mdc-layout-cell>
 
-
+        <hello-world class="card-demo"></hello-world>
+      </mdc-layout-grid>
     </main>
   </mdc-layout-app>
 </template>
@@ -79,7 +70,7 @@ $mdc-typography-font-family: "Roboto Mono", monospace;
 @import "@material/theme/mixins";
 @import "@material/line-ripple/mdc-line-ripple";
 .mw {
-  min-width: 800px;
+  min-width: 80px;
 }
 html {
   width: 100%;
