@@ -1,1 +1,1 @@
-export const v = 1.01
+export const v = '1.01.01'
