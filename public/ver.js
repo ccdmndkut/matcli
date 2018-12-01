@@ -1,2 +1,2 @@
-const v = '1.01.05'
+const v = '1.01.06'
 export {v};
