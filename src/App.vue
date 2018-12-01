@@ -69,7 +69,7 @@ $mdc-typography-font-family: "Roboto Mono", monospace;
 @import "@material/theme/mixins";
 @import "@material/line-ripple/mdc-line-ripple";
 .mw {
-  min-width: 800px;
+  min-width: 80px;
 }
 html {
   width: 100%;
