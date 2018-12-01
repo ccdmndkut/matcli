@@ -2,7 +2,7 @@
   <mdc-layout-cell
     align-center
     desktop='10'
-    phone='10'
+    phone='4'
     tablet='4'
   >
     <template v-for='n in num'>

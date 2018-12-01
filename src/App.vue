@@ -15,6 +15,7 @@
       </mdc-layout-cell>
     </mdc-layout-grid>
   </div>-->
+
   <mdc-layout-app>
     <mdc-toolbar slot='toolbar' >
       <mdc-toolbar-row>
@@ -44,18 +45,12 @@
     </mdc-drawer>
 
     <main class='mw'>
-      <mdc-layout-grid>
-        <mdc-layout-cell
-          align-center
-          desktop='2'
-          phone='2'
-          tablet='2'
-        ></mdc-layout-cell>
+     
+  
        
           <hello-world class='card-demo'></hello-world>
 
 
-      </mdc-layout-grid>
     </main>
   </mdc-layout-app>
 </template>
