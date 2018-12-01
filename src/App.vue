@@ -48,14 +48,18 @@
 
 <script>
 import HelloWorld from "./components/HelloWorld";
-import v from "../public/ver.js"
+import {v} from "../public/ver.js"
+console.log(v)
+
 // const buttonRipple = new MDCRipple(document.querySelector(".mdc-button"));
 export default {
   components: { HelloWorld },
   data() {
     return {};
   },
-  methods: {}
+  methods: {
+    
+  }
 };
 </script>
 

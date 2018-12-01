@@ -1,1 +1,2 @@
-export const v = '1.01.01'
+const v = '1.01.02'
+export {v};
