@@ -7,6 +7,6 @@ steps:
 - name: 'gcr.io/cloud-builders/npm'
   args: ['install']
 - name: 'gcr.io/cloud-builders/npm'
-  args: ["run", "vue-cli-service", "build"]
+  args: ["run vue-cli-service", "run build"]
 - name: "gcr.io/cloud-builders/gsutil"
   args: ["-m", "cp", "-r", "dist", "gs://www.evabenefits.com"]
