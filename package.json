@@ -3,13 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "start": "nps"
   },
   "dependencies": {
     "@google-cloud/storage": "^2.3.1",
     "material-components-web": "next",
+    "nps": "^5.9.3",
     "register-service-worker": "^1.5.2",
     "vue": "^2.5.17",
     "vue-mdc-adapter": "latest"
