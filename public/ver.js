@@ -1,2 +1,5 @@
 const v = '1.01'
-export {v};
+const vlog = function(v) {
+console.log(v)
+}
+export {v, vlog};
