@@ -17,8 +17,8 @@
 
 <script>
 import { MDCRipple } from "@material/ripple";
-import { MDCTextField } from "@material/textfield";
-import { MDCLineRipple } from "@material/line-ripple";
+// import { MDCTextField } from "@material/textfield";
+// import { MDCLineRipple } from "@material/line-ripple";
 
 export default {
   name: "HelloWorld",

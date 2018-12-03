@@ -2,8 +2,11 @@
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 module.exports = {
   configureWebpack: {
-    plugins: [new UglifyJsPlugin({
-      extractComments: true
-    })]
+    plugins: [
+      new UglifyJsPlugin({
+        extractComments: true,
+        warnings: false
+      })
+    ]
   }
 };
