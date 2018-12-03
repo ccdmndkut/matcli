@@ -3,7 +3,7 @@ const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 module.exports = {
   configureWebpack: {
     plugins: [
-      new webpack.optimize.UglifyJsPlugin({
+      new UglifyJsPlugin({
         uglifyOptions: {
           comments: false
         }
