@@ -9,4 +9,4 @@ steps:
 - name: 'gcr.io/cloud-builders/npm'
   args: ['run', 'start', 'build']
 - name: "gcr.io/cloud-builders/gsutil"
-  args: ["-m", "rsync", "-r", "-c", "dist", "gs://www.evabenefits.com"]
+  args: ["-m", "rsync", "-r", "-c", "-d", "dist", "gs://www.evabenefits.com"]

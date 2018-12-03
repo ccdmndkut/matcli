@@ -1,4 +1,35 @@
 <template>
+  <mdc-layout-app>
+
+    <mdc-top-app-bar
+      slot="toolbar"
+      title="Veteran 2 Veteran"
+      event="toggle-drawer"
+    >
+      <mdc-top-app-bar-action
+        @click="show-help"
+        icon="help"
+      ></mdc-top-app-bar-action>
+      <mdc-top-app-bar-action
+        @click="download"
+        icon="file_download"
+      ></mdc-top-app-bar-action>
+
+    </mdc-top-app-bar>
+
+    <mdc-drawer
+      persistent
+      slot="drawer"
+      toggle-on="toggle-drawer"
+    >
+    </mdc-drawer>
+
+    <main>
+      <!--  content markup here -->
+    </main>
+
+  </mdc-layout-app>
+
   <!-- <div class='app'>
     <mdc-layout-grid>
    <mdc-layout-cell
@@ -15,7 +46,8 @@
       </mdc-layout-cell>
     </mdc-layout-grid>
   </div>-->
-  <mdc-layout-app>
+  <!-- <mdc-layout-app>
+
     <mdc-toolbar slot="toolbar">
       <mdc-toolbar-row>
         <mdc-toolbar-section align-start>
@@ -43,13 +75,12 @@
         <hello-world class="card-demo"></hello-world>
       </mdc-layout-grid>
     </main>
-  </mdc-layout-app>
+  </mdc-layout-app> -->
 </template>
 
 <script>
 import HelloWorld from "./components/HelloWorld";
-import {v} from "../public/ver.js"
-console.log(v)
+import { v } from "../public/ver.js";
 
 // const buttonRipple = new MDCRipple(document.querySelector(".mdc-button"));
 export default {
@@ -57,9 +88,7 @@ export default {
   data() {
     return {};
   },
-  methods: {
-    
-  }
+  methods: {}
 };
 </script>
 
@@ -73,6 +102,8 @@ $mdc-typography-font-family: "Roboto Mono", monospace;
 @import "@material/theme/color-palette";
 @import "@material/theme/mixins";
 @import "@material/line-ripple/mdc-line-ripple";
+@import "@material/top-app-bar/mdc-top-app-bar";
+
 .mw {
   min-width: 80px;
 }

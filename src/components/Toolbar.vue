@@ -1,5 +1,5 @@
 <template>
-	<mdc-toolbar waterfall>
+	<mdc-toolbar waterfall class="tbar">
 		<mdc-toolbar-row>
 			<mdc-toolbar-section align-start >
 			<mdc-toolbar-menu-icon event="toggle-drawer"></mdc-toolbar-menu-icon>
@@ -16,6 +16,7 @@
 </template>
 
 <script>
+@import "@material/theme/mixins";
 	export default {
   name: 'hello',
   data () {
@@ -28,7 +29,11 @@
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
+<style scoped lang="scss">
+
+.tbar {
+
+}
 	h1,
 	h2 {
 		font-weight: normal;
