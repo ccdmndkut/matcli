@@ -2,14 +2,12 @@
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 module.exports = {
   configureWebpack: {
-    optimization: {
-      minimizer: [
-        new UglifyJsPlugin({
-          uglifyOptions: {
-            comments: false
-          }
-        })
-      ]
-    }
+    plugins: [
+      new webpack.optimize.UglifyJsPlugin({
+        uglifyOptions: {
+          comments: false
+        }
+      })
+    ]
   }
 };
