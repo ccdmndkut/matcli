@@ -5,7 +5,9 @@ module.exports = {
     plugins: [
       new UglifyJsPlugin({
         extractComments: true,
-        warnings: false
+        uglifyOptions: {
+          warnings: false
+        }
       })
     ]
   }
