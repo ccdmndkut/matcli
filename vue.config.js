@@ -4,6 +4,7 @@ module.exports = {
   configureWebpack: {
     plugins: [
       new UglifyJsPlugin({
+        include: ['src', 'components'],
         extractComments: true,
         uglifyOptions: {
           warnings: false
