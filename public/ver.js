@@ -1,4 +1,4 @@
-const v = 1.11
+const v = 1.12
 const vlog = function(v) {
 console.log(v)
 }
